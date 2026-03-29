@@ -54,7 +54,7 @@ PARAMETER RATIONALE FOR 1HZ25V
     edge_thresh     0.018  (+1.8% — tighter than R_10, looser than R_100)
     conf_sigma_1    1.6    (order-1 Wilson CI)
     conf_sigma_2    2.0    (order-2 Wilson CI — wider: smaller per-row n)
-    max_horizon     5
+    max_horizon     1
     entropy_gate    3.20   (below log2(10)=3.3219; 25% vol is quite random)
     drift_thresh    15.5   (chi-sq df=9, ~p=0.08)
     trade_interval  20 ticks (~20 s at 1 Hz)
@@ -117,7 +117,7 @@ CONFIG = {
     # --- Shared signal parameters ---
     # Break-even = 0.535. Need to clear by 2.2% minimum.
     "edge_thresh":  0.022,
-    "max_horizon":  5,
+    "max_horizon":  1,
 
     # --- Entropy gate ---
     "entropy_gate": 3.16,
@@ -129,7 +129,7 @@ CONFIG = {
 
     # --- Martingale ---
     "initial_stake":  0.35,
-    "martingale_mul": 1.35,
+    "martingale_mul": 1.27,
     "max_losses":     4,
     "loss_limit":     30.0,
 
