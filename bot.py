@@ -55,7 +55,7 @@ PARAMETER RATIONALE FOR 1HZ25V
     conf_sigma_1    1.6    (order-1 Wilson CI)
     conf_sigma_2    2.0    (order-2 Wilson CI — wider: smaller per-row n)
     max_horizon     5
-    entropy_gate    3.15   (below log2(10)=3.3219; 25% vol is quite random)
+    entropy_gate    3.20   (below log2(10)=3.3219; 25% vol is quite random)
     drift_thresh    15.5   (chi-sq df=9, ~p=0.08)
     trade_interval  20 ticks (~20 s at 1 Hz)
     martingale      1.35×, reset after 5 losses
@@ -120,7 +120,7 @@ CONFIG = {
     "max_horizon":  5,
 
     # --- Entropy gate ---
-    "entropy_gate": 3.10,
+    "entropy_gate": 3.16,
 
     # --- Non-stationarity ---
     "recent_win":   200,
